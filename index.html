@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StavbyKadlec | HOME</title>
+    <script src="https://kit.fontawesome.com/c4845fdcfa.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+<main>
+    <div class="nav">
+        <li><a href="#work">Služby</a></li>
+        <li><a href="#contact">Kontakt</a></li>
+        <li><a href="#gallery">Galerie</a></li>
+    </div>
+</main>
+
+<!--HOME PAGE-->
+<section class="home">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+<h1 class="ml16">STAVBY KADLEC</h1>
+<h2 class="">- Stavíme radost -</h2> 
+<a class="ca3-scroll-down-link ca3-scroll-down-arrow"
+ data-ca3_iconfont="ETmodules" data-ca3_icon=""></a>
+</section>
+
+<!--WORK PAGE-->
+<section id="work">
+<div class="services-section">
+    <div class="inner-width">
+      <h1 class="section-title">Naše Služby</h1>
+      <div class="border"></div>
+      <div class="services-container">
+
+        <div class="service-box">
+          <div class="service-icon">
+            <i class="fas fa-redo"></i>
+          </div>
+          <div class="service-title">Rekonstrukce</div>
+          <div class="service-desc">
+
+          </div>
+        </div>
+
+        <div class="service-box">
+          <div class="service-icon">
+            <i class="far fa-arrow-alt-circle-down"></i>
+          </div>
+          <div class="service-title">Zemní práce</div>
+          <div class="service-desc">
+            
+          </div>
+        </div>
+
+        <div class="service-box">
+          <div class="service-icon">
+            <i class="fas fa-tree"></i>
+          </div>
+          <div class="service-title">Truhlářské práce</div>
+          <div class="service-desc">
+            
+          </div>
+        </div>
+
+        <div class="service-box">
+          <div class="service-icon">
+            <i class="fas fa-key"></i>
+          </div>
+          <div class="service-title">Stavby na klíč</div>
+          <div class="service-desc">
+           
+          </div>
+        </div>
+
+        <div class="service-box">
+          <div class="service-icon">
+            <i class="fas fa-road"></i>
+          </div>
+          <div class="service-title">Zámkové dlažby</div>
+          <div class="service-desc">
+          </div>
+        </div>
+    </section>
+<section id="contact" class="kontakt">
+    
+    
+    <div class="services-section">
+        <div class="inner-width">
+          <h1 class="section-title">Kontakt</h1>
+          <div class="border"></div>
+          <div class="services-container">
+
+            <div class="service-box">
+                <div class="service-icon">
+                  <i class="fas fa-phone"></i>
+                </div>
+                <div class="service-title">Tel. číslo</div>
+                <div class="service-desc">
+                    <p>+420 725 797 666</p>
+                </div>
+              </div>
+
+              <div class="service-box">
+                <div class="service-icon">
+                  <i class="far fa-envelope"></i>
+                </div>
+                <div class="service-title">Email</div>
+                <div class="service-desc">
+                    <p>kadlec.165@seznam.cz</p>
+                </div>
+              </div>
+
+              <div class="service-box">
+                <div class="service-icon">
+                    <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <div class="service-title">Adresa</div>
+                <div class="service-desc">
+                    <p>StavbyKadlec s.r.o</p>
+                       <p>Vrchotovy Janovice 165</p> 
+                      <P> 257 53</p>
+                </div>
+              </div>
+
+              <div class="service-box">
+                <div class="service-icon">
+                    <i class="fas fa-id-card"></i>
+                </div>
+                <div class="service-title">OSOBA</div>
+                <div class="service-desc">
+                    <p>IČO: 05306604 <br> DIČ: CZ05306604</p>
+                </div>
+              </div>
+
+            
+
+</section>
+
+
+<section class="galerie">
+    <div class="services-section">
+        <div class="inner-width">
+          <h1 class="section-title">Galerie</h1>
+          <div class="border"></div>
+          <div class="services-container">
+
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+<section class="copyright">
+    <h1>StavbyKadlec s.r.o © 2020</h1>
+    <h2>Designed by: <a href="http://spaletomas.9e.cz/">ThomasOXY</a></h2>
+  </section>
+
+
+
+
+
+<script>
+    //Hlavní text float
+var textWrapper = document.querySelector('.ml16');
+textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+anime.timeline({loop: false})
+  .add({
+      delay: (500),
+    targets: '.ml16 .letter',
+    translateY: [-100,0],
+    easing: "easeOutExpo",
+    duration: 2000,
+    delay: (el, i) => 30 * i
+  }).add({
+    targets: '.ml16',
+  });
+</script>
+</body>
+</html>
