@@ -1,0 +1,25 @@
+@import 'home';
+@import 'arrow';
+@import 'navbar';
+@import 'work';
+@import 'error';
+
+html{
+    scroll-behavior: smooth;
+}
+body{ 
+        background-color: rgb(7, 7 , 7);
+        margin: 0;
+        padding: 0;
+        animation: fadeInAnimation ease-in 1.5s; 
+        animation-iteration-count: 1; 
+        animation-fill-mode: forwards; 
+    } 
+    @keyframes fadeInAnimation { 
+        0% { 
+            opacity: 0; 
+        } 
+        100% { 
+            opacity: 1; 
+        } 
+    } 
